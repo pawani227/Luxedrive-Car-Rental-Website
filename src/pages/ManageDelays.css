@@ -1,0 +1,211 @@
+.md-page {
+  padding-bottom: 40px;
+}
+
+.md-header {
+  margin-bottom: 30px;
+}
+
+.md-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 5px 0;
+}
+
+.md-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.md-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.md-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  color: #64748b;
+}
+
+.md-empty svg {
+  font-size: 3rem;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.md-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.md-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.md-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.md-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.md-badge-pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.md-badge-resolved {
+  background: #dcfce3;
+  color: #166534;
+}
+
+.md-customer {
+  margin: 0;
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.md-email {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.md-reason-box {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #f59e0b;
+}
+
+.md-reason-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+}
+
+.md-reason-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.md-vehicle {
+  font-size: 0.9rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.md-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.md-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.md-btn-update {
+  background: #6366f1;
+  color: white;
+}
+
+.md-btn-update:hover {
+  background: #4f46e5;
+}
+
+.md-btn-resolve {
+  background: #10b981;
+  color: white;
+}
+
+.md-btn-resolve:hover {
+  background: #059669;
+}
+
+/* Modal Styles */
+.md-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.md-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.md-modal h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.md-form-group {
+  margin-bottom: 15px;
+}
+
+.md-form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.md-form-group input,
+.md-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.md-modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}

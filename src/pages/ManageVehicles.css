@@ -1,0 +1,46 @@
+.vehicle-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.vehicle-thumb {
+  width: 80px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.type-badge {
+  padding: 4px 12px;
+  background: #e0e7ff;
+  color: #4f46e5;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.editable-price {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.editable-price:hover {
+  background: #f8fafc;
+  color: #6366f1;
+}
+
+.price-input {
+  width: 100px;
+  padding: 6px 10px;
+  border: 2px solid #6366f1;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}

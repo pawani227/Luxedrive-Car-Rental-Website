@@ -1,0 +1,95 @@
+.form-page {
+  padding-bottom: 60px;
+}
+
+.form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-section {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h3 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.sample-image {
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.sample-image:hover {
+  border-color: #6366f1;
+  transform: translateY(-3px);
+}
+
+.sample-image.selected {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.sample-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.sample-image span {
+  display: block;
+  padding: 8px;
+  background: #f8fafc;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #475569;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .form-card {
+    padding: 25px 20px;
+  }
+  .sample-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+}
